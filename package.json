@@ -1,0 +1,9 @@
+{
+  "name": "pokeapi",
+  "version": "1.0.0",
+  "description": "",
+  "dependencies": {
+    "axios": "^0.26.1",
+    "serverless-http": "^2.7.0"
+  }
+}

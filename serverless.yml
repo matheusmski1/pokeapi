@@ -1,0 +1,16 @@
+org: matheusmski
+app: pokeapi
+service: pokeapi
+frameworkVersion: "3"
+
+provider:
+  name: aws
+  runtime: nodejs14.x
+
+functions:
+  pokeApi:
+    handler: src/functions/pokeApi/index.handler
+    events:
+      - httpApi:
+          method: get
+          path: /pokemons
